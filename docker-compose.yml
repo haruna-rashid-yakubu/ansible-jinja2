@@ -1,0 +1,54 @@
+version: '3'
+services:
+  container-1:
+    build: .
+    restart: always 
+    container_name: container-10 
+    ports:
+      - "3001:22"
+    networks:
+      - network-1 
+  container-2:
+    build: .
+    restart: always 
+    container_name: container-20 
+    ports:
+      - "3002:22"
+    networks:
+      - network-1 
+  container-3:
+    build: .
+    restart: always 
+    container_name: container-30 
+    ports:
+      - "3003:22"
+    networks:
+      - network-2
+  container-4:
+    build: .
+    restart: always 
+    container_name: container-40 
+    ports:
+      - "3004:22"
+    networks:
+      - network-2 
+  container-5:
+    build: .
+    restart: always 
+    container_name: container-50 
+    ports:
+      - "3005:22"
+    networks:
+      - network-3
+  container-6:
+    build: .
+    restart: always 
+    container_name: container-60
+    ports:
+      - "3006:22"
+    networks:
+      - network-3 
+networks:
+  network-1: 
+  network-2: 
+  network-3:

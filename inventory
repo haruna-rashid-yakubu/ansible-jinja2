@@ -1,0 +1,12 @@
+[group1]
+machine1 ansible_host=172.21.0.3
+machine2 ansible_host=172.21.0.2 
+
+[group2]
+machine3 ansible_host=172.22.0.2
+machine4 ansible_host=172.22.0.3 
+
+[group3]
+machine5 ansible_host=172.23.0.2
+machine6 ansible_host=172.23.0.3 
+
